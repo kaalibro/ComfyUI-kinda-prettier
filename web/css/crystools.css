@@ -1,0 +1,58 @@
+.comfy-menu {
+  #crystools-monitors-root {
+    border: none !important;
+    width: unset !important;
+    box-shadow: none !important;
+    cursor: default !important;
+  }
+
+  #crystools-progressBar-root {
+    width: unset !important;
+  }
+}
+
+.comfyui-menu {
+  #crystools-monitors-root {
+    cursor: default !important;
+  }
+}
+
+[id*='Crystools.switch'] {
+  height: auto !important;
+  cursor: default;
+}
+
+/* New menu UI */
+.comfyui-menu #crystools-monitors-root {
+  .crystools-monitor {
+    border: 1px solid var(--bg-color);
+    border-radius: 0;
+
+    .crystools-text {
+      font-size: 11px;
+      line-height: 100%;
+      bottom: unset !important;
+      /* top: 2px; */
+    }
+  }
+
+  .crystools-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .crystools-slider {
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+
+  .crystools-label {
+    line-height: 100%;
+    top: unset !important;
+  }
+}
+
+.p-scrollpanel-bar {
+  display: none;
+}

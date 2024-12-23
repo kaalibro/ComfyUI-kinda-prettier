@@ -1,0 +1,133 @@
+:root {
+  --lightbox-bg: rgb(35 35 35 / 60%);
+}
+
+.litegraph .pysssss-image-feed {
+  /* background-image: var(--grain-sm); */
+  /* backdrop-filter: var(--bg-blur); */
+  /* border: 1px solid var(--p-content-border-color); */
+  /* border-radius: 8px; */
+}
+
+.litegraph .pysssss-image-feed .pysssss-image-feed-list {
+  gap: 8px;
+  background: transparent !important;
+  margin: 0 !important;
+  padding: 5px 10px 5px 0px !important;
+
+  scrollbar-width: thin;
+  color-scheme: dark;
+}
+
+.pysssss-image-feed {
+  font-family: var(--font) !important;
+  font-size: 12px !important;
+  /* background: var(--border-color); */
+  /* color: var(--content-fg); */
+  /* z-index: 1001 !important; */
+
+  &.pysssss-image-feed--bottom {
+    padding-top: 0;
+  }
+
+  .pysssss-image-feed-menu {
+    section {
+      border-radius: 0;
+      background: transparent;
+      padding: 5px 15px;
+    }
+
+    .sizing-menu {
+      background-color: var(--comfy-input-bg);
+      border-radius: 5px;
+    }
+
+    .size-controls-flyout {
+      border-radius: 5px;
+      background: var(--bg-color);
+      box-shadow: var(--box-shadow-sm);
+
+      .size-control {
+        /* backdrop-filter: var(--bg-blur); */
+      }
+    }
+
+    .pysssss-image-feed-btn-group {
+      .pysssss-image-feed-btn {
+        border: none;
+      }
+    }
+  }
+}
+
+.litegraph .pysssss-lightbox {
+  background-color: var(--lightbox-bg);
+  background-image: var(--grain-lg);
+  backdrop-filter: var(--bg-blur);
+}
+
+.pysssss-lightbox .pysssss-lightbox-img {
+  border: none;
+  border-radius: 0;
+  box-shadow: var(--box-shadow-lg);
+}
+
+.pysssss-lightbox .pysssss-lightbox-img:hover {
+  /* border: 3px solid var(--border-color); */
+  border: none;
+}
+
+.pysssss-lightbox .pysssss-lightbox-prev,
+.pysssss-lightbox .pysssss-lightbox-next {
+  justify-content: center;
+  width: 4rem;
+  height: 70vh;
+  background: var(--p-galleria-nav-button-background);
+  color: var(--p-galleria-nav-button-color);
+  /* border-color: #4e4e4e;
+  border-style: dashed; */
+  transition: background-color var(--transition);
+}
+
+.pysssss-lightbox .pysssss-lightbox-prev:after,
+.pysssss-lightbox .pysssss-lightbox-next:after {
+  width: 0.05em;
+  height: 0.05em;
+  left: unset;
+  top: unset;
+  font-size: var(--p-galleria-nav-icon-size);
+  transition: color var(--transition);
+}
+
+.pysssss-lightbox .pysssss-lightbox-prev:after {
+  margin: 0 10px 0 20px;
+  transform: rotate(-135deg) scale(0.65);
+}
+
+.pysssss-lightbox .pysssss-lightbox-next:after {
+  margin: 0 20px 0 10px;
+  transform: rotate(45deg) scale(0.65);
+}
+
+.pysssss-lightbox .pysssss-lightbox-prev {
+  border-radius: 0 var(--border-radius-xl) var(--border-radius-xl) 0;
+  border-width: 1px 1px 1px 0;
+}
+
+.pysssss-lightbox .pysssss-lightbox-next {
+  border-radius: var(--border-radius-xl) 0 0 var(--border-radius-xl);
+  border-width: 1px 0 1px 1px;
+}
+
+.pysssss-lightbox .pysssss-lightbox-close {
+  display: none;
+  /* color: var(--descrip-text);
+  transition: color var(--transition); */
+}
+
+.pysssss-lightbox .pysssss-lightbox-close:hover,
+.pysssss-lightbox .pysssss-lightbox-prev:hover,
+.pysssss-lightbox .pysssss-lightbox-next:hover {
+  /* color: var(--primary-hover-bg); */
+  background-color: var(--bg-color);
+}

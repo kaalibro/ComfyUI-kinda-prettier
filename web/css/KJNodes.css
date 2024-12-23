@@ -1,0 +1,15 @@
+.kj-documentation-popup {
+  font: var(--font) !important;
+  line-height: 1.2em !important;
+  padding: 0.6em 1.7em 0.6em 0.8em !important;
+  border: none !important;
+  border-radius: var(--border-radius-lg) !important;
+  box-shadow: var(--box-shadow-md);
+}
+
+.content-wrapper {
+  p {
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+}

@@ -1,0 +1,54 @@
+.litegraph .pysssss-autocomplete {
+  font-family: var(--font);
+  color: var(--input-text);
+  background-color: var(--comfy-menu-bg);
+  /* background-image: var(--grain-sm); */
+  /* backdrop-filter: var(--bg-blur); */
+  box-shadow: var(--box-shadow-sm);
+  /* border: 1px solid var(--border-color); */
+  border-radius: var(--border-radius-lg);
+  padding: 4px;
+  
+  .pysssss-autocomplete-item {
+    padding: 4px 8px;
+    border-left: none;
+    border-radius: var(--border-radius-sm);
+  
+    &:not(.pysssss-autocomplete-item--selected):hover {
+      background-color: var(--content-bg);
+    }
+
+    &.pysssss-autocomplete-item--selected {
+      background-color: var(--content-hover-bg);
+      /* color: var(--input-text); */
+      filter: brightness(110%);
+    }
+
+    .pysssss-autocomplete-highlight {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .pysssss-autocomplete-pill {
+      font-size: 0.7em;
+      color: var(--input-text);
+      padding: 3px 6px 1px 18px;
+    
+      &::after {
+        /* background: var(--comfy-menu-bg); */
+        /* border: 1px solid var(--border-color); */
+        border-radius: var(--border-radius-xs);
+      }
+    }
+  }
+}
+
+.pysssss-autocomplete-item-info {
+  text-decoration: none;
+  transition: color var(--transition);
+  will-change: auto !important;
+
+  &:hover {
+    filter: none;
+  }
+}

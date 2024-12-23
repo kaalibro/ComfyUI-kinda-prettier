@@ -1,0 +1,165 @@
+button.primary.comfyui-button[title='ComfyUI Manager'] {
+  background-color: var(--comfy-input-bg) !important;
+  color: var(--fg-color) !important;
+
+  &:not(:disabled):hover {
+    background-color: var(--border-color) !important;
+    color: var(--fg-color) !important;
+  }
+}
+
+#cm-manager-dialog {
+  min-height: 600px;
+}
+
+.comfy-modal .cm-title {
+  background-color: transparent;
+}
+
+.comfy-modal .cm-title font {
+  color: var(--p-dialog-color);
+}
+
+.comfy-modal .cm-notice-board {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+}
+
+.comfy-modal .cm-experimental {
+  border: 1px solid var(--error-text);
+}
+
+.comfy-modal .cm-experimental-legend {
+  color: var(--error-text);
+  background-color: var(--bg-color);
+  border: 1px solid var(--error-text);
+}
+
+.comfy-modal select.cn-manager-filter {
+  min-height: 35px;
+  border-radius: var(--border-radius-md) !important;
+  background: var(--comfy-input-bg) !important;
+  color: var(--fg-color);
+}
+
+.comfy-modal input.cn-manager-keywords {
+  min-width: 400px;
+  min-height: 35px;
+  border: 1px solid var(--border-color);
+}
+
+.comfy-modal .cn-manager-grid {
+  border: none;
+}
+
+.comfy-modal .cn-manager-grid .tg-body-frame .tg-row {
+  border-bottom: none;
+}
+
+.cn-manager-grid .tg-turbogrid {
+  background-color: transparent !important;
+}
+
+.cn-manager-grid .tg-turbogrid .tg-cell {
+  color: var(--fg-color);
+}
+
+.cn-manager-grid .tg-turbogrid .tg-hover.tg-row::before {
+  background: rgba(0, 0, 0, .05) !important;
+}
+.cn-manager-grid .tg-turbogrid.tg-dark .tg-hover.tg-row::before {
+  background: rgba(255, 255, 255, .05) !important;
+}
+
+.cn-manager-grid .tg-turbogrid .tg-selected.tg-row::after {
+  background: rgba(0, 0, 0, .06) !important;
+}
+.cn-manager-grid .tg-turbogrid.tg-dark .tg-selected.tg-row::after {
+  background: rgba(255, 255, 255, .1) !important;
+}
+
+p.cm-warn-note {
+  background-color: var(--textarea-bg) !important;
+  color: var(--input-text) !important;
+  border: 1px solid var(--error-text);
+}
+
+.cn-manager button,
+.comfy-modal #cm-close-button,
+.comfy-modal #cm-nodeinfo-button,
+.comfy-modal #cm-install-customnodes-button,
+.comfy-modal #workflowgallery-button,
+.comfy-modal .cm-button,
+.comfy-modal .cm-experimental-button,
+.comfy-modal .cm-small-button,
+.comfy-modal .cm-button-red {
+  font-size: 1.1em !important;
+  font-weight: 500;
+  height: unset !important;
+  padding: 6px 12px !important;
+}
+
+.cn-manager button {
+  border-color: transparent !important;
+}
+
+.cn-manager button:disabled {
+  background-color: transparent !important;
+  border: 1px solid var(--descrip-text);
+  color: var(--descrip-text) !important;
+  cursor: auto;
+}
+
+.cn-manager button:disabled:hover {
+  filter: none;
+}
+
+.cn-manager button.cn-btn-try-update,
+.cn-manager button.cn-btn-enable,
+.cn-manager button.cn-btn-disable,
+.cn-manager button.cn-btn-install,
+.cn-manager button.cn-btn-uninstall {
+  font-size: 1em;
+}
+
+.cn-manager button.cn-btn-try-update{
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.comfy-modal button.cm-button-red,
+.cn-manager button.cn-manager-restart {
+  background-color: var(--error-text) !important;
+  color: var(--bg-color) !important;
+  border-color: var(--error-text);
+}
+
+.cn-manager button.cn-btn-enable {
+  background-color: transparent;
+  border: 1px solid #58860e;
+  color: #7ec014;
+}
+
+.cn-manager button.cn-btn-disable {
+  background-color: transparent;
+  border: 1px solid var(--error-text);
+  color: var(--error-text);
+}
+
+.cn-manager button.cn-btn-install {
+  background-color: var(--accent-color);
+  color: var(--accent-color-text);
+  border-color: var(--accent-color);
+}
+
+.cn-manager button.cn-btn-install:hover {
+  filter: none;
+  background-color: var(--accent-color-hover);
+}
+
+.cn-manager button.cn-btn-uninstall {
+  background-color: var(--error-text);
+  color: var(--bg-color);
+  border-color: var(--error-text);
+}

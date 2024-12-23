@@ -1,0 +1,30 @@
+#maskEditor {
+  background: var(--lightbox-bg);
+  backdrop-filter: saturate(1.5) blur(40px);
+}
+
+#maskEditor_topBarUndoButton,
+#maskEditor_topBarRedoButton {
+  cursor: pointer;
+}
+
+.maskEditor_toolPanelContainer {
+  cursor: pointer;
+}
+
+.maskEditor_toolPanelZoomIndicator {
+  cursor: pointer;
+}
+
+.maskEditor_sidePanelBrushRange::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+.maskEditor_sidePanelBrushRange::-moz-range-thumb {
+  cursor: pointer;
+}
+
+#maskEditor_sidePanelBrushShapeCircle,
+#maskEditor_sidePanelBrushShapeSquare {
+  cursor: pointer;
+}

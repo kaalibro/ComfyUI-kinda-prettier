@@ -1,0 +1,27 @@
+/* *,
+*::before,
+*::after {
+  will-change: auto !important;
+} */
+
+.comfy-btn:hover:not(:disabled),
+.comfy-menu > button:hover,
+.comfy-menu-btns button:hover,
+.comfy-menu .comfy-list button:hover,
+.comfy-modal button:hover,
+.comfy-menu-actions button:hover,
+.litegraph.litecontextmenu,
+.litegraph.litecontextmenu.dark,
+.litegraph.litecontextmenu .litemenu-entry:hover:not(.disabled):not(.separator),
+.litegraph.lite-search-item,
+.litegraph.lite-search-item.generic_type,
+.draggable-item,
+.pysssss-autocomplete-item-info,
+.slot.interaction-prompt,
+.animated-container,
+.pswp,
+.pswp__bg,
+.pswp .pswp__hide-on-close,
+.pswp__top-bar > * {
+  will-change: auto !important;
+}

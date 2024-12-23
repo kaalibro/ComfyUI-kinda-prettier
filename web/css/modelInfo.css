@@ -1,0 +1,65 @@
+.comfy-modal {
+  &.pysssss-model-info {
+    font-family: var(--font);
+    color: var(--fg-color);
+    background-image: var(--grain-sm);
+    z-index: 1001;
+  }
+
+  &.pysssss-model-metadata {
+    z-index: 1001;
+  }
+}
+
+.pysssss-model-content {
+  font-weight: 400;
+
+  strong {
+    font-weight: 400;
+  }  
+  
+  h2 {
+    margin: 0 0 20px 0;
+  }
+
+  .pysssss-model-tags-list {
+    min-height: unset;
+  }
+
+  main {
+    p label {
+      color: var(--input-text);
+      cursor: auto;
+    }
+
+    textarea {
+      font-family: var(--font);
+      font-size: inherit;
+      color: var(--fg-color);
+      min-width: 350px !important;
+      border: none;
+      outline: none;
+    }
+
+    .pysssss-model-notes {
+      color: var(--p-form-field-float-label-focus-color);
+    }
+
+    textarea,
+    .pysssss-model-notes {
+      background: transparent;
+      margin: 10px 0;
+      padding: 0;
+      line-height: inherit;
+    }
+
+    .pysssss-preview {
+      margin-left: 30px;
+    }
+
+    .pysssss-preview img {
+      border-radius: var(--border-radius-sm);
+      width: 100%;
+    }
+  }
+} 
