@@ -565,6 +565,15 @@ hr {
 
 .comfyui-body-top .comfyui-menu {
   box-shadow: var(--box-shadow-sm);
+  padding: 0 0.5em;
+
+  .comfyui-logo {
+    display: none;
+  }
+
+  & > .p-button {
+    min-width: 40px;
+  }
 }
 
 .comfyui-body-bottom .comfyui-menu {
