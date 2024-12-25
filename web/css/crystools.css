@@ -13,7 +13,6 @@
 
 .comfyui-menu {
   #crystools-monitors-root {
-    cursor: default !important;
   }
 }
 
@@ -23,33 +22,41 @@
 }
 
 /* New menu UI */
-.comfyui-menu #crystools-monitors-root {
-  .crystools-monitor {
-    border: 1px solid var(--bg-color);
-    border-radius: 0;
-
-    .crystools-text {
-      font-size: 11px;
-      line-height: 100%;
-      bottom: unset !important;
-      /* top: 2px; */
+.comfyui-body-top {
+  .comfyui-menu {
+    #crystools-monitors-root {
+      cursor: default;
+      flex-wrap: nowrap;
+    
+      .crystools-monitor {
+        border: 1px solid var(--bg-color);
+        border-radius: 0;
+    
+        .crystools-text {
+          font-size: 11px;
+          line-height: 100%;
+          bottom: unset;
+          /* top: 2px; */
+        }
+      }
+    
+      .crystools-content {
+        display: flex;
+        align-items: center;
+      }
+    
+      .crystools-slider {
+        border-radius: 0;
+        box-shadow: none;
+        opacity: 0.5;
+      }
+    
+      .crystools-label {
+        line-height: 100%;
+        top: unset !important;
+      }
     }
-  }
-
-  .crystools-content {
-    display: flex;
-    align-items: center;
-  }
-
-  .crystools-slider {
-    border-radius: 0;
-    box-shadow: none;
-    opacity: 0.5;
-  }
-
-  .crystools-label {
-    line-height: 100%;
-    top: unset !important;
+  
   }
 }
 
