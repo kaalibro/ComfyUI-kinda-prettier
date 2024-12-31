@@ -543,6 +543,10 @@ hr {
   margin: 0;
 }
 
+.comfy-toast {
+  z-index: 10002;
+}
+
 /* New menu UI */
 .comfyui-menu .comfyui-button {
   /* background: var(--bg-color); */
